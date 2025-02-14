@@ -1,33 +1,9 @@
-/* Add this new wrapper for fixed positioning */
-.names-wrapper {
-    position: fixed;
-    top: 20px; /* Adjust this value to position the container vertically */
-    left: 50%; /* Centers the container horizontally */
-    transform: translateX(-50%); /* Centers the container horizontally */
-    z-index: 1000; /* Ensures the container stays above other content */
-    width: 100%; /* Ensures it spans the full width */
-    display: flex;
-    justify-content: center; /* Centers the container horizontally */
-}
-
-/* Update .names-container to remove fixed positioning */
-.names-container {
-    border: 1px solid rgba(255, 255, 255, 0.377);
-    border-radius: 10px;
-    width: 450px;
-    max-width: 80%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a semi-transparent background */
-    padding: 10px; /* Optional: Add padding for better spacing */
-}
-
-/* Rest of your existing CSS remains unchanged */
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
-ul, .person {
+ul, .person{
     text-align: center;
 }
 
@@ -40,7 +16,7 @@ ul {
 }
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #make-white {
@@ -52,19 +28,19 @@ p {
 li {
     padding-left: 10px;
     padding-right: 10px;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 button {
     color: palevioletred;
     font-size: 2em;
     font-weight: bold;
-    background: none;
+    background:none;
     border: none;
 }
 
 .person {
-    transition: all 0.3s ease-out 0s;
+    transition:all 0.3s ease-out 0s;
 }
 
 .person:hover {
@@ -78,7 +54,20 @@ button {
     justify-content: space-between; /* Distribute items evenly with space between them */
     padding: 0; /* Remove default padding */
     margin-left: 10px;
-    margin-right: 10px; /* Remove default margin */
+    margin-right: 10px ; /* Remove default margin */
+}
+
+.names-container {
+    position: fixed;
+    top: 40%;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Shift it left by 50% of its own width */
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 10px;
+    z-index: 0;
+    width: 450px;
+    max-width: 80%;
+    text-align: left;
 }
 
 #info-text {
