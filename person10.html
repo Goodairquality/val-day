@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Camila</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/noonenoticed.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that you may (or may not) like</h2>
+        <h3 id="make-pink">No One Noticed by The Marias </h3> <br>
+        <img id="recordPlayer" src="vinyls/camila.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Camila</h3>
+            <p>Hey, chat! Hope you're doing alright, hope you're all good. 
+              I lowkey miss the times we had in Ms. Fanny's class at the table. 
+              When were were watching some MLP fanmade videos and Ms. 
+              fanny came up behind us and asked what we were watching. 
+              Lowkey horrific. Also, congrats on Oxford! I hope you accomplish 
+              all your goals and live your best life in London! Have a great 
+              valentines Day and don't give Derrek a hard time in physics lmao</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

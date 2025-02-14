@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Ryan</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/darlingi.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that you might like</h2>
+        <h3 id="make-pink">Darling, I by Tyler, the Creator</h3> <br>
+        <img id="recordPlayer" src="vinyls/ryan.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Ryan</h3>
+            <p>Hey Ryan, you're a chill guy. Lwk is racist, 
+              but still a chill guy, and yk what? It could be worse. 
+              I respect you, man. I'm also glad to see that you don't 
+              like the creatures that Aishani seems to like so much. I 
+              respect that. Glad to know you got eyes! Happy Valentine's 
+              Day! (idk what music you listen to so uh just pretend you like it !)</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

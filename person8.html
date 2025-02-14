@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Danzel</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/raspberry.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that i think you might like</h2>
+        <h3 id="make-pink">Like A Raspberry by 宇宙ネコ子</h3> <br>
+        <img id="recordPlayer" src="vinyls/danzel.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Danzel</h3>
+            <p>Hey danzel! Hope you're doing well teehee! 
+              Lol fr though I just wanna say thanks for being so 
+              sweet and caring to me! You're one of the funniest people 
+              I know and super talented too like hello??? Davinchi who? 
+              I was really disappointed how this year we didn't have any 
+              classes together but I'm glad we still get to see each other 
+              in the mornings and after school. Even if this year wasn't 
+              like last year at the French table, I still enjoy spending 
+              time with all of you guys. I'm grateful that Mrs. Fanny brought 
+              us all together and brought you to us! 
+              Happy Valentine's day Danzel!</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

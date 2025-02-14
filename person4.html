@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Miyanna</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/holyland.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song i know you love <3</h2>
+        <h3 id="make-pink">holyland by Wave to Earth</h3> <br>
+        <img id="recordPlayer" src="vinyls/miyanna.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Miyanna</h3>
+            <p>Hey, pooks! I still find it funny how you thought I hated you last year in robotics,
+              and now you are one of my closest friends (lmao) anyways, I just wanna thank you for 
+              always being so caring and kind to me, making me laugh, and just always being there for 
+              me (ugh sappy I know but its valentines day so deal w it !!) I also admire how outgoing 
+              you are. I feel that spending time with you has allowed me to break out of my shell and 
+              do things I otherwise never would have done because I was too reserved. You're also the 
+              reason I'm more confident in myself today compared to the last 2 years of my life. I'm 
+              very grateful to have a friend like you and I wouldn't trade anything in the world for 
+              my relationship with you. There's more that I could say that I just can't properly express 
+              with words but I just want you to know you've changed my life and me for the better.
+              for now, enjoy this song <3</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

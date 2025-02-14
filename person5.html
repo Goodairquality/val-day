@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Ava</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/daddyshome.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that I think suits you</h2>
+        <h3 id="make-pink">Daddys home by Usher (lmao)</h3> <br>
+        <img id="recordPlayer" src="vinyls/ava.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Ava</h3>
+            <p>Hey Ava, I know we don't know each other too well, but I still want to take a moment to appreciate you. 
+              From the times we interacted, I can tell you are very intelligent, especially emotionally, and that's something 
+              I really admire about you! I also like that we have some things in common like the games we play yk? I hope we
+               get the chance to talk more in the future if you're down! Happy Valentine's Day!</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

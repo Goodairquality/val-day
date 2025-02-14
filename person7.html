@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Zion</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/wasyaname.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that I think youd like</h2>
+        <h3 id="make-pink">WUSYANAME by Tyler, The Creator</h3> <br>
+        <img id="recordPlayer" src="vinyls/zion.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Zion</h3>
+            <p>Hi chat, just wanna let you know that I appreciate you. 
+              You care about everyone at the table group and it really shows. 
+              It's also nice to have another West African friend that I can 
+              relate to a bit. Keep being positive, dont worry about what other people think, and you'll
+              do great in anything you put your mind to (idk your music taste too well mb gang !). 
+              Hope you have a great Valentine's Day! 
+              (Also, You're not beating me in sf btw, TRY ME !!!)</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

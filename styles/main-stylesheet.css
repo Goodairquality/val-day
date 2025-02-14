@@ -1,0 +1,84 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+ul, .person{
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#make-white {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration:none;
+}
+
+button {
+    color: palevioletred;
+    font-size: 2em;
+    font-weight: bold;
+    background:none;
+    border: none;
+}
+
+.person {
+    transition:all 0.3s ease-out 0s;
+}
+
+.person:hover {
+    transform: scale(1.3);
+    color: white;
+}
+
+.people-names {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    padding: 0; /* Remove default padding */
+    margin-left: 10px;
+    margin-right: 10px ; /* Remove default margin */
+}
+
+.names-container {
+    position: fixed;
+    top: 40%;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Shift it left by 50% of its own width */
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 10px;
+    z-index: 0;
+    width: 450px;
+    max-width: 80%;
+    text-align: left;
+}
+
+#info-text {
+    text-align: center;
+    color: palevioletred;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .people-names {
+        justify-content: center; /* Center items on smaller screens */
+    }
+}

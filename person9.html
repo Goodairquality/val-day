@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Derek</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/baila.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song i chose because you speak spainish</h2>
+        <h3 id="make-pink">Baila Esta Cumbia by Selena</h3> <br>
+        <img id="recordPlayer" src="vinyls/derek.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Derek</h3>
+            <p>Hi Derrek! Hope you're doing alright my guy. 
+              You know, I really miss the French table group 
+              but I'm glad that the three of us get to talk 
+              even if it's a little bit in the morning when 
+              we’re playing cookies run of TCG. Even though 
+              we share no classes, I'm grateful to know that 
+              we’re all still pretty close. I'm glad to have 
+              you as my friend. Happy valentine’s day my guy! </p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

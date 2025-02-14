@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/person-style.css" />
+    <script defer src="scripts/music-script.js"></script>
+    <title>Alla</title>
+  </head>
+  <body>
+    <div> <!--Whole thing in here-->
+      <audio id="audioPlayer" controls>
+        <source src="music/gluesong.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- This is just for visuals. The music stuff-->
+      <div class="all-audio" id="all-audio">
+        <p id="whisper">(Its best to use a laptop for this!)</p> <br>
+        <h2>A song that reminds me of you</h2>
+        <h3 id="make-pink">Glueson by Beabadoobee</h3> <br>
+        <img id="recordPlayer" src="vinyls/alla.png" alt="Record Player" /> <br>
+
+        <div class="audio-button-control">
+          <button onclick="changeAudio()" id="audio-change" class="audio-control">play</button>
+          <button onclick="increaseVolume()" class="audio-control">&and;</button>
+          <button onclick="decreaseVolume()" class="audio-control">&or;</button>
+        </div>
+
+        <div class="message">
+            <h3 id="make-pink">To Alla</h3>
+            <p>Hey, pooks! It's been a long, long time since we've seen each other ughgfhfh. 
+              I hope you're doing so well and that everything is going right for you. 
+              I hope we get the chance to see each other again but for now, heres a song that reminds me of you. 
+              Please stay safe, and stay healthy. Missing you so much, Happy Valentine's Day Alla! <3</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

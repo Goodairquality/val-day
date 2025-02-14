@@ -1,0 +1,119 @@
+/* General styles */
+* {
+    color: white;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  /* Hide the default audio player if not needed */
+  #audioPlayer {
+    display: none;
+  }
+  
+  #whisper {
+      opacity: .4;
+  }
+  
+  /* Responsive container for the audio section */
+  .all-audio {
+    margin-top: 5%;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 15px;
+    /*border-bottom: 3px solid white;*/ 
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Audio controls styling */
+  .audio-control {
+    margin: 0 10px;
+    padding: 5px 0;
+    color: palevioletred;
+    font-size: 2em;
+    background: none;
+    border: none;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .audio-control:hover {
+    color: white;
+    transform: scale(1.3);
+  }
+  
+  /* Container for the audio button controls */
+  .audio-button-control {
+    border-top: 2px white solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  /* Make the record image responsive */
+  #recordPlayer {
+    width: 250px;      /* Base size */
+    max-width: 90%;    /* Shrink on small screens */
+    height: auto;      /* Maintain aspect ratio */
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Styling for elements with id "make-pink" */
+  #make-pink {
+    color: palevioletred;
+  }
+  
+  /* Responsive message container */
+  .message {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    
+  
+  /* Optional: Media queries for further refinement */
+  @media (max-width: 600px) {
+    .audio-control {
+      font-size: 1.5em;
+    }
+  }
